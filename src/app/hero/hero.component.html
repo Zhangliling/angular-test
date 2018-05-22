@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的英雄</title>
+</head>
+<body>
+<div *ngFor="let hero of heros" (click)="onselectHero(hero)">
+
+  <span>id: </span>{{hero.id}}
+  <span>{{ hero.name}} </span>
+</div>
+<hero-detail [detailHero]="selectHero"></hero-detail>
+</body>
+</html>
+

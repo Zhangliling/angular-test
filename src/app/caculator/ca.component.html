@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计算器</title>
+</head>
+<body>
+<table>
+  <tr>
+    <td colspan="4">
+      <input type="text" #box (keyup)="1">
+      <p>{{box.value}}</p>
+    <input type="text" [value]="display_num">
+    </td>
+  </tr>
+  <tr>
+    <td><button type="button" (click)="clear()">C</button></td>
+    <td><button type="button" (click)="reverse()">+/-</button></td>
+    <td><button type="button" (click)="back()">-></button></td>
+    <td><button type="button" (click)="click('*');">×</button></td>
+  </tr>
+  <tr>
+    <td><button type="button" (click)="click(7);">7</button></td>
+    <td><button type="button" (click)="click(8);">8</button></td>
+    <td><button type="button" (click)="click(9);">9</button></td>
+    <td><button type="button" (click)="click('/');">÷</button></td>
+  </tr>
+  <tr>
+    <td><button type="button" (click)="click(4);">4</button></td>
+    <td><button type="button" (click)="click(5);">5</button></td>
+    <td><button type="button" (click)="click(6);">6</button></td>
+    <td><button type="button" (click)="click('-');">-</button></td>
+  </tr>
+  <tr>
+    <td><button type="button" (click)="click(1);">1</button></td>
+    <td><button type="button" (click)="click(2);">2</button></td>
+    <td><button type="button" (click)="click(3);">3</button></td>
+    <td><button type="button" (click)="click('+');">+</button></td>
+  </tr>
+  <tr>
+    <td colspan="2"><button type="button" (click)="click(0);">0</button></td>
+    <td><button type="button" (click)="click('.');">.</button></td>
+    <td><button type="button" (click)="result('=');">=</button></td>
+  </tr>
+</table>
+</body>
+</html>

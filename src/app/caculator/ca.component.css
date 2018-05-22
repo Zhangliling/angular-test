@@ -1,0 +1,20 @@
+table tr td{
+  border: 1px solid #000;
+  text-align: center;
+  width: 80px;
+  padding: 15px 0px;
+}
+table tr:first-child td {
+  padding: 0px;
+  text-align: left;
+}
+input {
+  width: 334px;
+}
+td:hover{
+  background: darkred;
+}
+td:active{
+  background: green;
+}
+
